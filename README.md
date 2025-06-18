@@ -15,3 +15,4 @@ Tipsや経験則の寄せ集め
 ### 未分類
 
 * [KonomiTV環境構築](./docs/konomitv.md)
+* [収納術](./docs/storage.md)
