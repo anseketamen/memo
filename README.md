@@ -16,3 +16,4 @@ Tipsや経験則の寄せ集め
 
 * [KonomiTV環境構築](./docs/konomitv.md)
 * [収納術](./docs/storage.md)
+* [コミケ（一般参加側）](./docs/comiket_regular.md)
