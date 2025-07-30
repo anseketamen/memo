@@ -10,6 +10,7 @@ Tipsや経験則の寄せ集め
 
 ### 同人活動
 
+* [コミケサークル参加](./docs/doujin/comiket_circle.md)
 * [パワポDTP](./docs/doujin/ppt_dtp.md)
 
 ### 未分類
