@@ -1,7 +1,6 @@
 # コミケサークル参加
 
 <form name="appeal" onsubmit="appeal()">
-    <label><>
 	<input type="text" name="comiketnumber" value="C106" >
 	<input type="button" name="appealbutton" value="検索" onclick="appeal()">
 </form>
