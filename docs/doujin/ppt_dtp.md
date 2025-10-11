@@ -14,15 +14,40 @@
 
 ### CubePDFなどで、塗り足し込みのサイズでPDFにする
 
-⇒オリジナルの用紙サイズをユーザー定義として登録する
+⇒オリジナルの用紙サイズをユーザー定義として登録する。
 
 [NEC LAVIE公式サイト > サービス＆サポート > Q&A > Q&A番号 021048](https://faq.nec-lavie.jp/qasearch/1007/app/servlet/relatedqa?QID=021048)
 
+以下のスクリプトでも設定できるらしい（未確認）。
+
+```powershell
+# 用紙サイズを mm から 0.01mm 単位に変換（Windowsは0.01mm単位を使用）
+$width = 154 * 100   # 154mm = 15400 (0.01mm単位)
+$height = 216 * 100  # 216mm = 21600 (0.01mm単位)
+
+# カスタムフォームを追加
+Add-PrinterForm -Name "A5塗り足し3mm" -Width $width -Height $height
+
+# すでに同名の用紙がある場合はエラーになるので削除しておく
+# Remove-PrinterForm -Name "A5塗り足し3mm" -ErrorAction SilentlyContinue
+```
 
 ### 印刷時に画像の解像度が低い
 
-⇒解決策不明。暫定対応としてPNG書き出ししてからpdf_asでPDF化
+⇒解決策不明。暫定対応としてPNG書き出ししてからpdf_asでPDF化。
 
 [PowerPoint から高解像度 (高dpi) スライドをエクスポートする方法 - Office | Microsoft Docs](https://docs.microsoft.com/ja-jp/office/troubleshoot/powerpoint/change-export-slide-resolution)
 
 例では300までしか書かれていないが、600に設定したら600dpiでPNG化できた
+
+**新規作成する場合**
+
+```powershell
+New-ItemProperty -Path 'HKCU:\Software\Microsoft\Office\16.0\PowerPoint\Options' -Name 'ExportBitmapResolution' -Value 600 -PropertyType DWord
+```
+
+**値を変更する場合**
+
+```powershell
+Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Office\16.0\PowerPoint\Options' -Name 'ExportBitmapResolution' -Value 600
+```
