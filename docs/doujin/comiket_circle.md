@@ -88,6 +88,11 @@ function twittersearch() {
   * サイズ、ページ、価格を記載しておくとよい（次回サークル申込時に記載が必要なため、参照できるものとして便利）
 * Webカタログ更新
   * おしながき
+* 各種発送
+  * 会場への直接搬入はコミケットアピール参照（めんどくさいのでいつも手搬入……）
+  * 箱（[ゆうパック](https://www.post.japanpost.jp/service/you_pack/package.html)）：100サイズ220円、120サイズ380円
+  * 箱（[ヤマト](https://market.kuronekoyamato.co.jp/market/MarketTopAction_doInit.action)）：100サイズ220円、120サイズ260円
+  * 120サイズは意外と入らない。諦めて100サイズ2箱とかのほうがいい（n敗）
 
 
 #### 当日
