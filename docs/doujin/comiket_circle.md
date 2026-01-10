@@ -1,19 +1,5 @@
 # コミケサークル参加
 
-<!--
-<form name="appeal" onsubmit="appeal()">
-	<input type="text" name="comiketnumber" value="C106" >
-	<input type="button" name="appealbutton" value="検索" onclick="appeal()">
-</form>
-<script type="text/javascript">
-function twittersearch() {
-  var number = document.appeal.comiketnumber.value;
-	var uri = `https://www.comiket.co.jp/info-c/${number}/${number}appeal.html`;
-	window.open(uri, '_blank');
-	return false;
-};
-</script>
--->
 
 ### 当日の持ち物
 
@@ -86,6 +72,7 @@ function twittersearch() {
 * おしながき作成・投稿
   * n日目、ホール、スペースを併記
   * サイズ、ページ、価格を記載しておくとよい（次回サークル申込時に記載が必要なため、参照できるものとして便利）
+  * [おしながきレイアウトの参考](https://x.com/yue9/status/1685974027196911619)
 * Webカタログ更新
   * おしながき
 * 各種発送
@@ -115,3 +102,4 @@ function twittersearch() {
 閉会後の国際展示場駅は入場規制がなされており、駅に着いてもすぐには乗車できない。16時の閉会まで会場にいると、大井町に帰ってくるのが17時くらいになる。ただしこれは爆速で撤収する前提であり、撤収作業が牛歩のサークルを手伝っていた知り合いは17時半くらいに大井町着となっていた。
 
 したがって、ビッグサイトから離れた場所で打ち上げをするときは、開始時刻を18時以降に設定することが望ましい。
+
